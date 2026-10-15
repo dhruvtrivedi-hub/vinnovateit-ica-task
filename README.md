@@ -50,12 +50,12 @@ Outputs go to `results/audio/` and `results/plots/`.
 
 | Source | \|corr\| mixture (best) | \|corr\| PCA | \|corr\| ICA | SI-SDR PCA (dB) | SI-SDR ICA (dB) |
 |---|---|---|---|---|---|
-| ambient | TODO | TODO | TODO | TODO | **45.61** |
-| music | TODO | TODO | TODO | TODO | **44.13** |
-| speech | TODO | TODO | TODO | TODO | **52.84** |
-| **mean** | TODO | TODO | TODO | TODO | **47.53** |
+| ambient | 0.881 | 0.763 | 1.000 | 1.44 | **45.61** |
+| music | 0.835 | 0.795 | 1.000 | 2.34 | **44.13** |
+| speech | 0.290 | 0.949 | 1.000 | 9.56 | **52.84** |
+| **mean** | 0.669 | 0.836 | 1.000 | 4.45 | **47.53** |
 
-Sanity checks printed by the script: `max|cov(Z) - I| ≈ 1e-8` (whitening works) and `max|W Wᵀ - I| ≈ 1e-10` (demixing matrix is orthogonal, as theory predicts for whitened data). FastICA converged in 4 iterations.
+Sanity checks printed by the script: `max|cov(Z) - I| ≈ 1e-8` (whitening works) and `max|W Wᵀ - I| ≈ 1e-10` (demixing matrix is orthogonal, as theory predicts for whitened data). FastICA converged in 6 iterations.
 
 **FastICA variants (same data):** deflation+logcosh 44.99 dB, deflation+exp 46.07 dB, deflation+cube 38.47 dB. `cube` (kurtosis) is the least robust because it is sensitive to outliers.
 

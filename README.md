@@ -2,8 +2,6 @@
 
 Recover clean audio sources from mixed recordings using **Independent Component Analysis**, implemented with only `numpy` / `scipy` / `matplotlib`. No library ICA, PCA or whitening functions are used.
 
-> **Before submitting:** replace the synthetic demo sources with real speech / music / ambient WAVs (see [Using your own audio](#using-your-own-audio)), re-run, and update the numbers and audio links below.
-
 ## Pipeline
 
 | Step | Where | What |
